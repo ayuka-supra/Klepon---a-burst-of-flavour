@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <title>Klepon</title>
   </head>
 
@@ -72,26 +73,8 @@
       <button class="buyButton">👉 Buy Klepon now</button>
       <hr />
 
-      <p class="footer">This website is coded by Ayu Suprapti.</p>
-
-      <script>
-        function buyKlepon() {
-          let name = prompt("What's your name?");
-          let email = prompt("What's your email address?");
-          let likeCakes = prompt("Do you like sweet dessert?");
-
-          likeCakes = likeCakes.toLowerCase().trim();
-
-          if (likeCakes === "no") {
-            alert("Be brave, " + name + "! Try some Klepon now.");
-          } else {
-            alert("Fantastic, " + name + "! Enjoy the Klepon.");
-          }
-        }
-
-        let buyButton = document.querySelector("button");
-        buyButton.addEventListener("click", buyKlepon);
-      </script>
+      <p class="footer">This website is coded by Wahyu Suprapti.</p>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
