@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klepon</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        122.3deg,
+        rgb(111, 71, 133) 14.6%,
+        rgb(232, 129, 166) 29.6%,
+        rgb(237, 237, 183) 42.1%,
+        rgb(244, 166, 215) 56.7%,
+        rgb(154, 219, 232) 68.7%,
+        rgb(238, 226, 159) 84.8%
+      );
+
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: blue;
+      border: 2px solid rgb(17, 17, 172);
+      padding: 10px;
+      font-size: 30px;
+      border-radius: 4px;
+      background: rgb(194, 215, 58);
+    }
+    h2 {
+      text-align: center;
+      color: blue;
+      font-size: 25px;
+    }
+    h3 {
+      text-align: center;
+      color: blue;
+      font-size: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 0% auto;
+      max-width: 90%;
+      border-radius: 4px;
+    }
+    p {
+      line-height: 1.5;
+      margin: 20px 20px;
+      color: blue;
+    }
+    span {
+      color: red;
+      font-style: italic;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 50px;
+      line-height: 1.5;
+      color: blue;
+    }
+
+    button {
+      display: block;
+      margin: 20px auto;
+      background: rgb(194, 215, 58);
+      border: none;
+      padding: 20px 30px;
+      font-size: 18px;
+      color: blue;
+      border: 10px;
+      box-shadow: 10px 10px 10px rgba 0 0 0 0.7;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+      color: red;
+      background: white;
+    }
+    .more-info {
+      text-decoration: none;
+      color: blue;
+      width: 70%;
+      text-align: center;
+    }
+    .more-info:hover {
+      text-decoration: underline;
+      color: red;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 60px;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>
+        <strong> I ❤️ Klepon.</strong>
+      </h1>
+      <h2>
+        <em>🪄 Klepon is Magical 🪄</em>
+      </h2>
+      <h3>
+        <em
+          >chewy, bursting with sweet, melty palm sugar filling, with a subtle
+          pandan flavor.</em
+        >
+      </h3>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/162/362/original/e7dad049e9fbcf1d050f8363707b561f.jpeg?1743917427"
+        alt="Klepon"
+        width="400"
+      />
+      <p>
+        Klepon is
+        <span> a traditional Indonesian dessert </span>
+        consisting of chewy, pandan-flavored glutinous rice balls filled with
+        molten palm sugar and coated in grated coconut. Klepon originates from
+        Java, Indonesia, and is also known as kelepon or kalalapun, also known
+        outside Java as onde-onde and buah melaka. If you are already familiar
+        with Japanese mochi or Chinese tangyuan, Klepon has a similar chewy and
+        smooth texture because it is also made with glutinous rice flour.
+        <br />
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Klepon"
+          target="_blank"
+          class="more-info"
+        >
+          ❤️ More on Klepon ❤️</a
+        >
+      </p>
+      <p><strong>How to make Klepon:</strong></p>
+      <ul>
+        <li>
+          - Mix glutinous rice flour with pandan juice or flavoring and water to
+          form a dough.
+          <br />
+          - Roll the dough into small balls and flatten to create a pocket for
+          the palm sugar filling.
+          <br />
+          - Fill the pocket with palm sugar and seal the edges.
+          <br />
+          - Boil the Klepon balls in water until they float, then roll them in
+          grated coconut.
+          <br />
+          - Serve and enjoy.
+        </li>
+      </ul>
+      <p>
+        It is not hard to make Klepon, but if you want to try them now, order
+        through our shop for a fast delivery.
+      </p>
+
+      <hr />
+
+      <button class="buyButton">👉 Buy Klepon now</button>
+      <hr />
+
+      <p class="footer">This website is coded by Ayu Suprapti.</p>
+
+      <script>
+        function buyKlepon() {
+          let name = prompt("What's your name?");
+          let email = prompt("What's your email address?");
+          let likeCakes = prompt("Do you like sweet dessert?");
+
+          likeCakes = likeCakes.toLowerCase().trim();
+
+          if (likeCakes === "no") {
+            alert("Be brave, " + name + "! Try some Klepon now.");
+          } else {
+            alert("Fantastic, " + name + "! Enjoy the Klepon.");
+          }
+        }
+
+        let buyButton = document.querySelector("button");
+        buyButton.addEventListener("click", buyKlepon);
+      </script>
+    </div>
+  </body>
+</html>
